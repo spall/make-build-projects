@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Download tar if doesn't exist
+
+PROJ="put name of paroject tar here"
+SRC="link to wget project"
+
+if [ ! -e ${PROJ} ]
+then
+    wget ${SRC}
+fi
+

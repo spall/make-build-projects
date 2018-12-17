@@ -1,0 +1,33 @@
+This directory contains the projects that use make and are being benchmarked.
+
+It contains the scripts to benchmark each project as well as the 
+source code for each project.
+
+The data will be stored in a different repository
+
+vim      note: make install is wrong.
+tmux
+coreutils
+gnu-make
+openssl without make install
+zstd
+
+
+Not working:
+git      due to re-executing make
+ffmpeg   due to re-executing make
+chez     command fails..... try again with new directory thing
+gtk+     don't recall
+
+
+How to add to this repo:
+
+1. Create a directory for the project:
+2. create a download script that can download the tar of the project
+3. create a tool.sh script            note: copy the tool.template file and fill in the missing pieces
+4. create a tool-w-strace.sh script   note: copy the tool-w-strace.template file and fill in the missing pieces
+
+Dependencies: custom-make   : in the compilation-benchmarks project 
+	      custom strace : https://github.com/spall/strace.git
+
+
